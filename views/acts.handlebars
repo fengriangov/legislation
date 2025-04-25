@@ -1,0 +1,20 @@
+<h2 class="header">
+    {{#if (eq type "if")}}acts in force{{/if}}
+    {{#if (eq type "nif")}}acts ceased{{/if}}
+    {{#if (eq type "all")}}acts{{/if}}
+</h2>
+<ul id="hyperlinks">
+    {{#each groupedActs}}
+        <li><a href="#{{@key}}">{{@key}}</a></li>
+    {{/each}}
+</ul>
+<br>
+<br>
+{{#each groupedActs}}
+    <h3 class="header" id="{{@key}}">{{@key}}</h3>
+    <ul>
+        {{#each this}}
+            <li><a href="/act/{{this.ID}}">{{this.name}}</a></li>
+        {{/each}}
+    </ul>
+{{/each}}

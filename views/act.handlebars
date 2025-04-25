@@ -1,0 +1,16 @@
+<a href="#" onclick="window.history.back()" class="backLink">&lt; back</a>
+<h2 class="header">{{act.name}}</h3>
+<p>Act Identifier: {{act.ID}}</p>
+<p>Date of Enactment: {{act.enactmentDate}}</p>
+<p>Effective Date: {{act.effectiveDate}}</p>
+{{#if act.cessationDate}}
+    {{#if act.inForce}}
+    {{else}}
+        <p>Cessation Date: {{act.cessationDate}}</p>
+    {{/if}}
+{{/if}}
+<p>Status: {{#if act.inForce}}In Force{{else}}Ceased{{/if}}</p>
+<a href="/acts/{{act.ID}}.pdf" target="_blank" class="pdfButton">
+    <img src="/pdf-icon.png" alt="PDF Icon" width="24" height="24">
+    Open PDF
+</a>

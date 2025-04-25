@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    font-family: Roboto Mono;
+    background-color: #122117;
+    color: #daede0;
+}
+
+.header {
+    color: #6ade8f;
+}
+
+button > a {
+    text-decoration: none;
+}
+  
+.container {
+    display: flex;
+    width: 100%;
+    height: 75vh;
+}
+
+#menu {
+    width: 220px;
+    background-color: #1b3123;
+    padding: 15px;
+}
+#content {
+    flex: 1;
+    padding: 15px;
+}
+#menu *, #content * {
+    background-color: inherit;
+}
+#menu h3, #menu p, #menu ul, #menu li, #content h2, #content p {
+    margin: 0;
+}
+#menu, #content {
+    padding-top: 5px;
+    padding: 15px;
+}
+
+.contentOutline {
+    padding: 20px;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#hyperlinks {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#hyperlinks > li {
+    float: left;
+}
+#hyperlinks > li a {
+    display: block;
+    text-align: center;
+    padding: 5px;
+}
+
+.backLink {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+.pdfButton {
+    display: inline-flex;
+    align-items: center;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+.pdfButton img {
+    margin-right: 5px;
+}
+.pdfButton:hover {
+    color: rgb(226, 226, 226);
+}

@@ -1,0 +1,31 @@
+[
+    {
+        "name": "Prove It Restriction Act 2025",
+        "ID": "202503003",
+        "enactmentDate": "26/03/2025",
+        "effectiveDate": "26/03/2025",
+        "cessationDate": "28/03/2025",
+        "inForce": false
+    },
+    {
+        "name": "Fair Work Act 2025",
+        "ID":"202503002",
+        "enactmentDate": "13/03/2025",
+        "effectiveDate": "13/03/2025",
+        "inForce": true
+    },
+    {
+        "name": "Business Licensing & Review Act 2025",
+        "ID":"202503001",
+        "enactmentDate": "12/03/2025",
+        "effectiveDate": "12/03/2025",
+        "inForce": true
+    },
+    {
+        "name": "Phrase Restriction Act 2025",
+        "ID":"202503004",
+        "enactmentDate": "28/03/2025",
+        "effectiveDate": "28/03/2025",
+        "inForce": true
+    }
+]
