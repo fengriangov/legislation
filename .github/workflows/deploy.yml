@@ -1,4 +1,4 @@
-name: Deploy to VPS
+name: Deploy Legislation
 
 on:
   push:
@@ -8,24 +8,7 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-      
-      - name: Deploy to VPS
-        uses: appleboy/ssh-action@v1.2.0
-        with:
-          host: ${{ secrets.VPS_HOST }}
-          username: deploy
-          key: ${{ secrets.VPS_PRIVATE_KEY }}
-          script: |
-            cd /var/www/fengri/legislation
-            echo "--=[ Pulling code from Github ]=--"
-            git fetch -u origin main
-            echo "--=[ Discarding local changes ]=--"
-            git reset --hard origin/main
-            echo "--=[ Installing required dependencies ]=--"
-            npm install
-            echo "--=[ Restarting web server ]=--"
-            pm2 restart fengri-legislation --update-env
+    uses: fengriangov/actions/.github/workflows/deploy-to-vps.yml@main
+    with:
+      app_name: legislation
+    secrets: inherit
