@@ -2,7 +2,7 @@ const express = require("express")
 const exphb = require("express-handlebars")
 const fs = require('fs')
 
-const port = 3001;
+const port = 3002;
 
 const app = express()
 const hbs = exphb.create({
